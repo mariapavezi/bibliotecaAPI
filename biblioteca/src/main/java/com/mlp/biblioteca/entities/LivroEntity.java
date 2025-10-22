@@ -14,6 +14,8 @@ public class LivroEntity {
 
     private Long id;
     private String nome;
+    private String autor;
+
 
     public LivroEntity() {
     }
@@ -32,5 +34,13 @@ public class LivroEntity {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 }
