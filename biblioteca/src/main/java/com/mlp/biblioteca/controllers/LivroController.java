@@ -26,12 +26,12 @@ public class LivroController {
         return livroService.findLivrosEntity();
     }
 
-    @PostMapping ("/id")
+    @PostMapping ("/{id}")
     public void atualizarLivro(@PathVariable Long id, @RequestBody LivroEntity livroEntity){
         livroService.atualizarLivro(id, livroEntity);
     }
 
-    @DeleteMapping("/id")
+    @DeleteMapping("/{id}")
     public void deletarLivro(@PathVariable Long id){
         livroService.deletarLivro(id);
     }
